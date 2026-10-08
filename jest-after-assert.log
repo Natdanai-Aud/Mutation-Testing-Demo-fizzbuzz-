@@ -1,0 +1,46 @@
+﻿
+> mutation-testing-demo@1.0.0 test
+> jest --verbose --testPathIgnorePatterns stryker-tmp
+
+node.exe : (node:12312) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((node:12312) [D...ts.F_OK instead:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+(Use `node --trace-deprecation ...` to show where the warning was created)
+FAIL test/fizzbuzz.test.js
+  Fizzbuzz
+    ร— gets fizzbuzz (4ms)
+    โ not fizzbuzz (1ms)
+
+  โ— Fizzbuzz โ€บ gets fizzbuzz
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: "fizzbuzz"
+    Received: "foozbuzz"
+
+    [0m [90m 3 |[39m describe([32m"Fizzbuzz"[39m[33m,[39m [36mfunction[39m() {
+     [90m 4 |[39m     it([32m"gets fizzbuzz"[39m[33m,[39m [36mfunction[39m() {
+    [31m[1m>[22m[39m[90m 5 |[39m         
+expect(fizzbuzz([35m15[39m))[33m.[39mtoEqual([32m"fizzbuzz"[39m)[33m;[39m
+     [90m   |[39m                              [31m[1m^[22m[39m
+     [90m 6 |[39m     })[33m;[39m
+     [90m 7 |[39m
+     [90m 8 |[39m     it([32m"not fizzbuzz"[39m[33m,[39m [36mfunction[39m() {[0m
+
+      at Object.<anonymous> (test/fizzbuzz.test.js:5:30)
+
+-------------|----------|----------|----------|----------|-------------------|
+File         |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+-------------|----------|----------|----------|----------|-------------------|
+All files    |      100 |      100 |      100 |      100 |                   |
+ fizzbuzz.js |      100 |      100 |      100 |      100 |                   |
+-------------|----------|----------|----------|----------|-------------------|
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.693s
+Ran all test suites.

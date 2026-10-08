@@ -1,0 +1,28 @@
+﻿
+> mutation-testing-demo@1.0.0 test
+> jest --verbose --testPathIgnorePatterns stryker-tmp
+
+node.exe : (node:5252) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((node:5252) [DE...ts.F_OK instead:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS test/fizzbuzz.test.js
+  Fizzbuzz
+    โ gets fizzbuzz (2ms)
+    โ not fizzbuzz
+
+-------------|----------|----------|----------|----------|-------------------|
+File         |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+-------------|----------|----------|----------|----------|-------------------|
+All files    |      100 |      100 |      100 |      100 |                   |
+ fizzbuzz.js |      100 |      100 |      100 |      100 |                   |
+-------------|----------|----------|----------|----------|-------------------|
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        2.136s
+Ran all test suites.

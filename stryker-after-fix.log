@@ -1,0 +1,30 @@
+﻿[32m09:33:24 (5140) INFO ConfigReader[39m Using stryker.conf.js in the current working directory.
+[32m09:33:25 (5140) INFO BroadcastReporter[39m Detected that current console does not support the "progress" reporter, downgrading to "progress-append-only" reporter
+[32m09:33:25 (5140) INFO InputFileResolver[39m Found 1 of 13 file(s) to be mutated.
+[32m09:33:25 (5140) INFO InitialTestExecutor[39m Starting initial test run. This may take a while.
+[32m09:33:29 (5140) INFO InitialTestExecutor[39m Initial test run succeeded. Ran 2 tests in 4 seconds (net 3 ms, overhead 3223 ms).
+[32m09:33:29 (5140) INFO MutatorFacade[39m 14 Mutant(s) generated
+[32m09:33:29 (5140) INFO SandboxPool[39m Creating 8 test runners (based on CPU count)
+Mutation testing 85% (elapsed: <1m, remaining: <1m) 12/14 tested (2 survived, 0 timed out)
+
+2. [Survived] ConditionalExpression
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:2:8
+-       if (number % 3 === 0) {
++       if (true) {
+
+Ran all tests for this mutant.
+4. [Survived] ConditionalExpression
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:5:8
+-       if (number % 5 === 0) {
++       if (true) {
+
+Ran all tests for this mutant.
+Ran 2.00 tests per mutant on average.
+-------------|---------|----------|-----------|------------|----------|---------|
+File         | % score | # killed | # timeout | # survived | # no cov | # error |
+-------------|---------|----------|-----------|------------|----------|---------|
+All files    |   85.71 |       12 |         0 |          2 |        0 |       0 |
+ fizzbuzz.js |   85.71 |       12 |         0 |          2 |        0 |       0 |
+-------------|---------|----------|-----------|------------|----------|---------|
+[32m09:33:39 (5140) INFO HtmlReporter[39m Your report can be found at: file:///C:/Users/natda/Desktop/fizzbuzz%20-%20mutation/reports/mutation/html/index.html
+[32m09:33:39 (5140) INFO Stryker[39m Done in 14 seconds.

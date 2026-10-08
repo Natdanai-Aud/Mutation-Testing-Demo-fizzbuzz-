@@ -1,0 +1,127 @@
+﻿[32m09:32:21 (7964) INFO ConfigReader[39m Using stryker.conf.js in the current working directory.
+[32m09:32:22 (7964) INFO BroadcastReporter[39m Detected that current console does not support the "progress" reporter, downgrading to "progress-append-only" reporter
+[32m09:32:22 (7964) INFO InputFileResolver[39m Found 1 of 9 file(s) to be mutated.
+[32m09:32:22 (7964) INFO InitialTestExecutor[39m Starting initial test run. This may take a while.
+[32m09:32:25 (7964) INFO InitialTestExecutor[39m Initial test run succeeded. Ran 2 tests in 3 seconds (net 2 ms, overhead 2653 ms).
+[32m09:32:25 (7964) INFO MutatorFacade[39m 14 Mutant(s) generated
+[32m09:32:25 (7964) INFO SandboxPool[39m Creating 8 test runners (based on CPU count)
+
+0. [Survived] BlockStatement
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:0:26
+-   function fizzbuzz(number) {
+
+-       var result = '';
+
+-       if (number % 3 === 0) {
+
+-           result += 'fooz'
+
+-       }
+
+-       if (number % 5 === 0) {
+
+-           result += 'buzz'
+
+-       }
+
+-       return result;
+
+-   }
++   function fizzbuzz(number) {}
+
+Ran all tests for this mutant.
+1. [Survived] StringLiteral
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:1:17
+-       var result = '';
++       var result = "Stryker was here!";
+
+Ran all tests for this mutant.
+2. [Survived] ConditionalExpression
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:2:8
+-       if (number % 3 === 0) {
++       if (true) {
+
+Ran all tests for this mutant.
+3. [Survived] ConditionalExpression
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:2:8
+-       if (number % 3 === 0) {
++       if (false) {
+
+Ran all tests for this mutant.
+4. [Survived] ConditionalExpression
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:5:8
+-       if (number % 5 === 0) {
++       if (false) {
+
+Ran all tests for this mutant.
+5. [Survived] ConditionalExpression
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:5:8
+-       if (number % 5 === 0) {
++       if (true) {
+
+Ran all tests for this mutant.
+6. [Survived] EqualityOperator
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:2:8
+-       if (number % 3 === 0) {
++       if (number % 3 !== 0) {
+
+Ran all tests for this mutant.
+7. [Survived] ArithmeticOperator
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:2:8
+-       if (number % 3 === 0) {
++       if (number * 3 === 0) {
+
+Ran all tests for this mutant.
+8. [Survived] EqualityOperator
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:5:8
+-       if (number % 5 === 0) {
++       if (number % 5 !== 0) {
+
+Ran all tests for this mutant.
+9. [Survived] ArithmeticOperator
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:5:8
+-       if (number % 5 === 0) {
++       if (number * 5 === 0) {
+
+Ran all tests for this mutant.
+10. [Survived] StringLiteral
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:6:18
+-           result += 'buzz'
++           result += ""
+
+Ran all tests for this mutant.
+11. [Survived] BlockStatement
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:5:26
+-       if (number % 5 === 0) {
+
+-           result += 'buzz'
+
+-       }
++       if (number % 5 === 0) {}
+
+Ran all tests for this mutant.
+12. [Survived] BlockStatement
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:2:26
+-       if (number % 3 === 0) {
+
+-           result += 'fooz'
+
+-       }
++       if (number % 3 === 0) {}
+
+Ran all tests for this mutant.
+13. [Survived] StringLiteral
+C:\Users\natda\Desktop\fizzbuzz - mutation\src\fizzbuzz.js:3:18
+-           result += 'fooz'
++           result += ""
+
+Ran all tests for this mutant.
+Ran 2.00 tests per mutant on average.
+-------------|---------|----------|-----------|------------|----------|---------|
+File         | % score | # killed | # timeout | # survived | # no cov | # error |
+-------------|---------|----------|-----------|------------|----------|---------|
+All files    |    0.00 |        0 |         0 |         14 |        0 |       0 |
+ fizzbuzz.js |    0.00 |        0 |         0 |         14 |        0 |       0 |
+-------------|---------|----------|-----------|------------|----------|---------|
+[32m09:32:34 (7964) INFO HtmlReporter[39m Your report can be found at: file:///C:/Users/natda/Desktop/fizzbuzz%20-%20mutation/reports/mutation/html/index.html
+[32m09:32:34 (7964) INFO Stryker[39m Done in 12 seconds.

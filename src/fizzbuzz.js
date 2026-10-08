@@ -1,7 +1,7 @@
 function fizzbuzz(number) {
     var result = '';
     if (number % 3 === 0) {
-        result += 'fooz'
+        result += 'fizz'
     }
     if (number % 5 === 0) {
         result += 'buzz'

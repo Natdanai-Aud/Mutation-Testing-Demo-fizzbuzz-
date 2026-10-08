@@ -2,7 +2,7 @@ var fizzbuzz = require('../src/fizzbuzz.js');
 
 describe("Fizzbuzz", function() {
     it("gets fizzbuzz", function() {
-        fizzbuzz(15);
+        expect(fizzbuzz(15)).toEqual("fizzbuzz");
     });
 
     it("not fizzbuzz", function() {
